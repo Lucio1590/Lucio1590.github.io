@@ -37,47 +37,40 @@
     <link rel="stylesheet" href="skills.css" />
   </head>
   <body>
-    <nav id="navbar">
-      <input type="checkbox" id="nav-check" />
-      <div class="nav-header">
-        <div class="nav-title">
-          <a href="/">My Portfolio</a>
-        </div>
+    <nav class="navbar">
+      <h1>Lucian's Portfolio</h1>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-      <div class="nav-btn">
-        <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
-
-      <div class="nav-links">
-        <a href="#header">Home</a>
-        <a href="#about">About</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-      </div>
+      <ul class="nav no-search">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">About</a></li>
+        <li class="nav-item"><a href="#">Work</a></li>
+        <li class="nav-item"><a href="#">Careers</a></li>
+        <li class="nav-item"><a href="#">Contact Us</a></li>
+      </ul>
     </nav>
 
     <!-- 1.	Home Section: A welcoming page with your photo, name, and a tagline (e.g., “Aspiring Web Developer”). -->
     <main>
       <section id="header" class="home-header grid">
-        <div class="header-avatar-container grid-item">
-          <img
-            class="header-avatar"
-            src="public/images/main-image.jpeg"
-            alt="Lucian Diaconu"
-          />
-        </div>
         <div class="header-content grid-item">
-          <h1>Hi, I'm Lucian Diaconu</h1>
+          <h1>Hi, I'm Lucian</h1>
           <p>
             I'm a <strong>full-stack developer</strong> with
             <strong>React</strong>, <strong>C#</strong> and
             <strong>Flutter</strong> developing outstanding web and mobile
             applications.
           </p>
+        </div>
+        <div class="header-avatar-container grid-item">
+          <img
+            class="header-avatar"
+            src="public/images/main-image.jpeg"
+            alt="Lucian Diaconu"
+          />
         </div>
         <div class="separator-1">
           <svg
@@ -104,6 +97,14 @@
               love to spend my free time skiing, going around with my motorcycle
               or coding on the rainy days.
             </p>
+            <img
+              class="about-image"
+              src="public/images/avatar2.png"
+              alt="Lucian Diaconu"
+            />
+          </div>
+
+          <div class="grid-item">
             <h4>My Skills</h4>
             <div class="skill-icons-container">
               <i id="htmlIcon" class="skill-icon fa-brands fa-html5"></i>
@@ -118,14 +119,6 @@
               <i id="reactIcon" class="skill-icon fa-brands fa-react"></i>
               <i id="flutterIcon" class="skill-icon fa-brands fa-flutter"></i>
             </div>
-          </div>
-
-          <div class="grid-item">
-            <img
-              class="about-image"
-              src="public/images/avatar2.png"
-              alt="Lucian Diaconu"
-            />
           </div>
         </div>
         <div class="separator-2">
@@ -145,44 +138,11 @@
 
       <!-- 3.	Resume Section: A detailed section showcasing your education, work experience, and skills (use a table or cards). -->
 
-      <section class="resume">
+      <section class="resume-section" id="resume">
+        <h2>Resume</h2>
         <div class="timeline">
-          <div id="rielco" class="container left">
-            <div class="text-box">
-              <h2>Rielco S.r.l.</h2>
-              <p>
-                <small><strong>Forlì</strong> — Web developer</small>
-              </p>
-              <time><small>Jun 2022 - Sept 2022</small></time>
-              <p>
-                <strong>Flutter</strong>, external consultant for a company that
-                dealt with boilers and thermostats, maintained and improved the
-                codebase, added new features for remote controlling using IoT
-                services in collaboration with a foreign team
-              </p>
-            </div>
-          </div>
-          <div id="bookmark" class="container right">
-            <div class="text-box">
-              <h2>Bookmark S.r.l.</h2>
-              <p>
-                <small><strong>Forlì</strong> — Frontend Developer </small>
-              </p>
-              <time><small>Mar 2020 - Sept 2020 (Part Time)</small></time>
-              <p>
-                <strong>Javascript</strong>, created a custom tool to create
-                avatars given Given Names with a headless browser
-                technology<strong><br /></strong
-                ><strong>Vue.js, </strong>Creation of custom components and
-                templates for customers and partners management and
-                visualization of data through charts.<br /><strong
-                  >Flutter</strong
-                >, internal application for task management (<em>trello</em>
-                inspired)
-              </p>
-            </div>
-          </div>
           <div id="onit" class="container left">
+            <img src="public/images/companies/onit-logo.png" alt="" />
             <div class="text-box">
               <h2>Onit Group S.r.l.</h2>
               <p>
@@ -233,6 +193,10 @@
             </div>
           </div>
           <div id="antlia" class="container right">
+            <img
+              src="public/images/companies/antlia_logo.jpeg"
+              alt="Antlia logo"
+            />
             <div class="text-box">
               <h2>Antlia S.r.l.</h2>
               <p>
@@ -248,6 +212,10 @@
             </div>
           </div>
           <div id="sensei1" class="container left">
+            <img
+              src="public/images/companies/sensei favicon.ico"
+              alt="sensei logo"
+            />
             <div class="text-box">
               <h2>Sensei S.r.l. - Project 1</h2>
               <p>
@@ -272,6 +240,10 @@
             </div>
           </div>
           <div id="sensei2" class="container right">
+            <img
+              src="public/images/companies/sensei favicon.ico"
+              alt="sensei logo"
+            />
             <div class="text-box">
               <h2>Sensei S.r.l. - Project 2</h2>
               <p>
@@ -311,4 +283,5 @@
     </main>
   </body>
   <script src="timeline.js"></script>
+  <script src="script.js"></script>
 </html>

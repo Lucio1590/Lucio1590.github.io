@@ -1,6 +1,6 @@
 :root {
   --background-color: #2b3137;
-  
+
   --text-color: rgba(255, 255, 255, 1);
   --border-color: rgba(255, 255, 255, 1);
 
@@ -25,28 +25,24 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-body{
-  margin:0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  margin: 0;
 }
 
-section{
+section {
   position: relative;
   width: 100%;
 }
 
-.home-header  .header-avatar {
+.home-header .header-avatar {
   width: 180px;
   height: 180px;
   border-radius: 50%;
   border: 2px solid var(--border-color);
-  
-  background: #2980B9;
-  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
-  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
 
+  background: #2980b9;
+  background: -webkit-linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+  background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
 }
 
 .home-header {
@@ -56,9 +52,12 @@ section{
   align-items: center;
   flex-direction: column;
   padding: 20px;
+  padding-bottom: 60px;
+  min-height: 60vh;
 }
 
-.about-section{
+.about-section {
+  min-height: 60vh;
   background-color: var(--white);
   color: var(--dark-gray);
   display: flex;
@@ -67,23 +66,22 @@ section{
   text-align: center;
 }
 
-.about-content{
+.about-content {
   max-width: 800px;
   align-self: center;
-
 }
 
 .about-image {
-height: 200px;
-width: 200px;
+  height: 200px;
+  width: 200px;
 }
 
 .separator-1 {
   position: absolute;
   bottom: -1px;
   left: 0;
-  /* margin: -20px; */
-  /* width: 100%; */
+
+  width: 100%;
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
@@ -97,9 +95,8 @@ width: 200px;
 }
 
 .separator-1 .shape-fill {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
-
 
 .separator-2 {
   position: absolute;
@@ -118,5 +115,26 @@ width: 200px;
 }
 
 .separator-2 .shape-fill {
-  fill: #FFFFFF;
+  fill: #ffffff;
+}
+
+.resume-section {
+  padding-top: 60px;
+}
+.resume-section > h2 {
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .home-header {
+    padding: 0 100px;
+  }
+
+  .about-section {
+    padding: 0 100px;
+  }
+
+  .resume-section {
+    padding-top: 100px;
+  }
 }
