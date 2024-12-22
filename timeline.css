@@ -1,0 +1,21 @@
+.timeline{
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+  color: var(--dark-gray);
+}
+
+.container{
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  /* background: rgba(0, 0, 0, .3); */
+}
+
+.text-box {
+  padding: 20px;
+  background-color: var(--white);
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}

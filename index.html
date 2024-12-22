@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="grid-system.css" />
+    <link rel="stylesheet" href="timeline.css" />
   </head>
   <body>
     <nav id="navbar">
@@ -41,11 +42,10 @@
       </div>
 
       <div class="nav-links">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-        <a href="#">Link 4</a>
-        <a href="#">Link 5</a>
+        <a href="#header">Home</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
 
@@ -54,7 +54,7 @@
       <section id="header" class="home-header">
         <img
           class="header-avatar"
-          src="public/images/avatar2.png"
+          src="public/images/main-image.jpeg"
           alt="Lucian Diaconu"
         />
         <div class="header-content">
@@ -70,27 +70,192 @@
 
       <!-- 2.	About Section: An overview of your background, career objectives, and a brief biography. -->
       <section id="about">
-        <!--  -->
+        <div class="grid">
+          <div class="grid-item center-container">
+            <h2>About Me</h2>
+            <p>
+              I am a full-stack developer with 5 years of experience using
+              React, C# and Flutter to develop web and mobile applications. I
+              have a passion for learning everything new and I am always looking
+              forward to new challenges.
+            </p>
+          </div>
+          <div class="grid-item">
+            <img
+              class="about-image"
+              src="public/images/favicon.png"
+              alt="Lucian Diaconu"
+            />
+          </div>
+        </div>
       </section>
 
       <!-- 3.	Resume Section: A detailed section showcasing your education, work experience, and skills (use a table or cards). -->
 
-      <!-- 4.	Contact Section: Provide links to your social profiles (e.g., LinkedIn, GitHub) and an optional form to capture visitor messages, with all the required validation. -->
-      <div class="grid">
-        <span>One column default</span>
-      </div>
+      <section class="resume">
+        <div class="timeline">
+          <div id="rielco" class="container left">
+            <div class="text-box">
+              <h2>Rielco S.r.l.</h2>
+              <p>
+                <small><strong>Forlì</strong> — Web developer</small>
+              </p>
+              <time><small>Jun 2022 - Sept 2022</small></time>
+              <p>
+                <strong>Flutter</strong>, external consultant for a company that
+                dealt with boilers and thermostats, maintained and improved the
+                codebase, added new features for remote controlling using IoT
+                services in collaboration with a foreign team
+              </p>
+            </div>
+          </div>
+          <div id="bookmark" class="container right">
+            <div class="text-box">
+              <h2>Bookmark S.r.l.</h2>
+              <p>
+                <small><strong>Forlì</strong> — Frontend Developer </small>
+              </p>
+              <time><small>Mar 2020 - Sept 2020 (Part Time)</small></time>
+              <p>
+                <strong>Javascript</strong>, created a custom tool to create
+                avatars given Given Names with a headless browser
+                technology<strong><br /></strong
+                ><strong>Vue.js, </strong>Creation of custom components and
+                templates for customers and partners management and
+                visualization of data through charts.<br /><strong
+                  >Flutter</strong
+                >, internal application for task management (<em>trello</em>
+                inspired)
+              </p>
+            </div>
+          </div>
+          <div id="onit" class="container left">
+            <div class="text-box">
+              <h2>Onit Group S.r.l.</h2>
+              <p>
+                <small
+                  ><strong>Cesena</strong> — Fullstack Developer, Mobile
+                  Developer</small
+                >
+              </p>
+              <time><small>Dec 2020 - June 2022</small></time>
+              <p>
+                Worked in R&amp;D team on various projects with different
+                technologies:
+              </p>
+              <ul>
+                <li>
+                  <p>
+                    <strong>C#</strong> (<strong>Razor</strong>),
+                    <strong>SCSS, Vue js,</strong> to implement eye catching
+                    websites in collaboration with a team of UI designers
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>C#</strong>,<strong> .NET Framework</strong>,
+                    <strong>SQL Server</strong>, development of<em>
+                      REST APIs</em
+                    >,<br />development of <em>custom CMS</em> to manage the
+                    content of the websites mentioned before and implementing
+                    new parts to manage data for mobile apps and to analyze it
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Flutter</strong>, multi language mobile app for a
+                    football team, with the possibility for the fans to engage
+                    in activities and minigames (<em>gamification</em>)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Javascript </strong>(Typescript),
+                    <strong>Vue Js</strong>, Implementation of a custom tool to
+                    display<em> live matches</em> and commentaries on social
+                    apps, used <em>GSAP library</em> to implement animations
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="antlia" class="container right">
+            <div class="text-box">
+              <h2>Antlia S.r.l.</h2>
+              <p>
+                <small><strong>Milano</strong> — Mobile Developer</small>
+              </p>
+              <time><small>Jun 2022 - Sept 2022</small></time>
+              <p>
+                <strong>Flutter</strong>, external consultant for a company that
+                dealt with boilers and thermostats, maintained and improved the
+                codebase, added new features for remote controlling using IoT
+                services in collaboration with a foreign team
+              </p>
+            </div>
+          </div>
+          <div id="sensei1" class="container left">
+            <div class="text-box">
+              <h2>Sensei S.r.l. - Project 1</h2>
+              <p>
+                <small><strong>Milano</strong> — Frontend Developer</small>
+              </p>
+              <time><small>Oct 2023 - Nov 2023 </small></time>
+              <p>
+                <strong>React, redux, sagas, Scss, Javascript, Webpack,</strong>
+              </p>
+              <p>
+                Design and Development of Portals for managing digital payment
+                cards for end users, businesses, and banks,
+              </p>
+              <p>
+                Refactoring the accessibility of applications according to WCAG
+                2.2 standards
+              </p>
+              <p>
+                Implementation of export scripts through the modification and
+                creation of plugins for webpack
+              </p>
+            </div>
+          </div>
+          <div id="sensei2" class="container right">
+            <div class="text-box">
+              <h2>Sensei S.r.l. - Project 2</h2>
+              <p>
+                <small><strong>Milano</strong> — Frontend Developer</small>
+              </p>
+              <time><small>Nov 2024 - ongoing </small></time>
+              <p>
+                <strong
+                  >React, recoil,&nbsp;Scss, Styled components, Typescript,
+                  Turbopack, Material UI</strong
+                >
+              </p>
+              <p>
+                Design and development of components and functionalities for
+                proprietary React framework based on micro-frontends for a
+                company in the medical field (dialysis clinics)
+              </p>
+              <p>
+                <strong
+                  >.NET, C#, CSS, Javascript, Razor Pages, MVC, MUI,
+                  Bootstrap,</strong
+                >
+              </p>
+              <p>
+                Implementation of features for a .NET management application
+                using the previously mentioned framework,
+              </p>
+              <p>
+                implementation of localization and multilingual functionalities
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <div class="grid">
-        <div class="grid-item">Col - 1</div>
-        <div class="grid-item">Col - 2</div>
-        <div class="grid-item">Col - 2</div>
-        <div class="grid-item">Col - 2</div>
-      </div>
-      <div class="grid">
-        <div class="grid-item">Col - 1</div>
-        <div class="grid-item">Col - 2</div>
-        <div class="grid-item">Col - 2</div>
-      </div>
+      <!-- 4.	Contact Section: Provide links to your social profiles (e.g., LinkedIn, GitHub) and an optional form to capture visitor messages, with all the required validation. -->
     </main>
   </body>
+  <script src="timeline.js"></script>
 </html>
