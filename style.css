@@ -25,7 +25,19 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-.home-header .header-avatar {
+body{
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section{
+  position: relative;
+  width: 100%;
+}
+
+.home-header  .header-avatar {
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -46,7 +58,65 @@ html {
   padding: 20px;
 }
 
+.about-section{
+  background-color: var(--white);
+  color: var(--dark-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-content{
+  max-width: 800px;
+  align-self: center;
+
+}
+
 .about-image {
 height: 200px;
 width: 200px;
+}
+
+.separator-1 {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  /* margin: -20px; */
+  /* width: 100%; */
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.separator-1 svg {
+  position: relative;
+  display: block;
+  width: calc(147% + 1.3px);
+  height: 107px;
+}
+
+.separator-1 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
+.separator-2 {
+  position: absolute;
+  bottom: -106px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.separator-2 svg {
+  position: relative;
+  display: block;
+  width: calc(147% + 1.3px);
+  height: 107px;
+}
+
+.separator-2 .shape-fill {
+  fill: #FFFFFF;
 }

@@ -1,0 +1,88 @@
+#skills-container ul {
+  margin: 2%;
+  padding: 2%;
+}
+
+.skill-icons-container {
+  font-size: 3vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: .5vw;
+}
+
+.skill-icon {
+  margin: .5vw 1vw;
+}
+
+.skill-icon:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+}
+
+#skills-container {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+	bordeR: 1px solid red;
+	background-color: #dfd9d9;
+}
+
+#skills-container ul {
+  text-align: center;
+}
+
+#htmlIcon {
+  color: #E34F26;
+}
+
+#cssIcon {
+  color: #1572B6;
+}
+
+#fontawesomeIcon {
+  color: skyblue;
+}
+
+#figmaIcon {
+  color: #F24E1E;
+}
+
+#sassIcon {
+  color: #CC6699;
+}
+
+#bootstrapIcon {
+  color: #563D7C;
+}
+
+#jsIcon {
+  color: #F7DF1E;
+}
+
+#reactIcon {
+  color: skyblue;
+}
+
+#phpIcon {
+  color: #777BB4;
+}
+
+#pythonIcon {
+  color: yellow;
+}
+
+#bashIcon {
+  color: white;
+}
+
+#postgresIcon {
+  color: #0064a5;
+}
+
+#databaseIcon {
+  color: #00758F;
+}
+
+
+
+#flutterIcon{
+  color: #02569B;
+}
