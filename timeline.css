@@ -92,3 +92,39 @@
   top: 52px;
   margin-top: -16px;
 }
+
+@media screen and (max-width: 768px) {
+  .timeline {
+    margin: 50px auto;
+  }
+  .timeline::after {
+    left: 31px;
+  }
+  .container {
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 80px;
+  }
+
+  .right {
+    left: 0;
+  }
+
+  .right img,
+  .left img {
+    left: 10px;
+  }
+
+  .left::before,
+  .right::before {
+    border-top: 16px solid transparent;
+    border-left: 16px solid var(--white);
+    border-bottom: 16px solid transparent;
+    border-right: 0;
+    left: 30px;
+  }
+  .left::before {
+    left: 65px;
+    transform: rotate(180deg);
+  }
+}
