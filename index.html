@@ -30,11 +30,11 @@
     />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="nav.css" />
-    <link rel="stylesheet" href="grid-system.css" />
-    <link rel="stylesheet" href="timeline.css" />
-    <link rel="stylesheet" href="skills.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/nav.css" />
+    <link rel="stylesheet" href="style/grid-system.css" />
+    <link rel="stylesheet" href="style/timeline.css" />
+    <link rel="stylesheet" href="style/skills.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -45,14 +45,12 @@
         <span class="bar"></span>
       </div>
       <ul class="nav no-search">
-        <li class="nav-item"><a href="#">Home</a></li>
-        <li class="nav-item"><a href="#">About</a></li>
-        <li class="nav-item"><a href="#">Work</a></li>
-        <li class="nav-item"><a href="#">Careers</a></li>
-        <li class="nav-item"><a href="#">Contact Us</a></li>
+        <li class="nav-item"><a href="#header">Home</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#resume">Resume</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
     <!-- 1.	Home Section: A welcoming page with your photo, name, and a tagline (e.g., “Aspiring Web Developer”). -->
     <main>
       <section id="header" class="home-header grid">
@@ -280,6 +278,40 @@
       </section>
 
       <!-- 4.	Contact Section: Provide links to your social profiles (e.g., LinkedIn, GitHub) and an optional form to capture visitor messages, with all the required validation. -->
+      <section class="contact-section" id="contact">
+        <h2>Contact</h2>
+        <div class="grid">
+          <div class="grid-item">
+            <h4>Get in touch</h4>
+            <p>
+              If you want to get in touch with me, you can find me on the
+              following social media platforms:
+            </p>
+            <div class="social-icons-container">
+              <a
+                href="https://www.linkedin.com/in/lucian-diaconu-17704a158/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/Lucio1590" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="grid-item">
+            <h4>Send me a message</h4>
+            <form class="contact-form" action="submit" method="post">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
   <script src="timeline.js"></script>

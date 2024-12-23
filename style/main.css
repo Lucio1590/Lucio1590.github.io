@@ -7,7 +7,7 @@
   --avatar-background-color: rgba(86, 91, 178, 0.498);
 
   --white: #fff;
-  --dark-gray: #2b3137;
+  --dark-gray: #24292d;
   --light-gray: #2b3137;
   --green: #2fbb4f;
   --blue: #0d74e7;
@@ -23,6 +23,7 @@ html {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -53,6 +54,7 @@ section {
   flex-direction: column;
   padding: 20px;
   padding-bottom: 60px;
+  padding-top: 120px;
   min-height: 60vh;
 }
 
@@ -137,4 +139,44 @@ section {
   .resume-section {
     padding-top: 100px;
   }
+}
+
+.contact-section {
+  background-color: var(--white);
+  color: var(--dark-gray);
+  padding: 100px 90px;
+  text-align: center;
+}
+
+.contact-section a {
+  color: var(--dark-gray);
+  text-decoration: none;
+}
+.contact-section i {
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--dark-gray);
+  border-radius: 6px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--green);
+  color: var(--white);
+  cursor: pointer;
 }
