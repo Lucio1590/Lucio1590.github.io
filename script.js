@@ -1,9 +1,18 @@
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-document.querySelector('.menu-toggle').addEventListener("click", function() {
-  document.querySelector(".nav").classList.toggle("mobile-nav");
-  this.classList.toggle("is-active");
-});
-document.querySelector('.nav').addEventListener("click", function() {
-  document.querySelector(".nav").classList.toggle("mobile-nav");
-  document.querySelector('.menu-toggle').classList.toggle("is-active");
-});
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
