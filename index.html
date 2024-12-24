@@ -388,7 +388,16 @@
             </div>
           </div>
           <div class="grid-item form-container">
-            <form action="#" class="form">
+            <form
+              class="form"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="bd1d81f6-a513-4c0b-b175-7ad82baa6b6f"
+              />
               <h4>Want to have a chat?</h4>
               <p>
                 If you want to have a chat with me, please send a message
@@ -398,6 +407,7 @@
                 <label for="name">Name</label>
                 <input
                   type="text"
+                  name="name"
                   value-size="40"
                   placeholder="Ex. John Doe"
                   required
@@ -407,6 +417,7 @@
                 <label for="name">Email</label>
                 <input
                   type="email"
+                  name="email"
                   value-size="40"
                   placeholder="Ex. example@company.com"
                   required
@@ -414,7 +425,11 @@
               </div>
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea placeholder="Message" required></textarea>
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
               </div>
               <input class="form-button" type="submit" value="Send" />
             </form>
