@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="style/grid-system.css" />
     <link rel="stylesheet" href="style/timeline.css" />
     <link rel="stylesheet" href="style/skills.css" />
+    <link rel="stylesheet" href="style/form.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -147,6 +148,76 @@
       <section class="resume-section" id="resume">
         <h2>Resume</h2>
         <div class="timeline">
+          <h3>Education</h3>
+          <div class="container left">
+            <img
+              src="public/images/education/blaise pascal - logo.png"
+              alt=""
+            />
+            <div class="text-box">
+              <h2>ITT Blaise Pascal</h2>
+              <p>
+                <small
+                  ><strong>Cesena</strong> — High School | informatics and
+                  Telecoms
+                </small>
+              </p>
+              <time><small>2015 - 2020</small></time>
+              <p>
+                1&rsquo;st Year, expertise with <strong>C</strong> and
+                <strong>C++</strong> for algorithmic problems.<br />4 years of
+                studying&nbsp; <strong>WPF</strong>,<strong> XAML</strong>&nbsp;
+                <strong>C#</strong>,<strong> .NET framework</strong>,<strong>
+                  .NET</strong
+                >
+                and <strong>ASP.NET</strong>, and<strong> SQL Server</strong
+                >.<br />Expertise in <strong>HTML</strong>,
+                <strong>CSS</strong>, <strong>Bootstrap</strong>,
+                <strong>JavaScript</strong>, <strong>JQuery&nbsp; </strong>for
+                creating both static and dynamic websites. (Then applied to
+                build websites for local companies during a month long
+                internship)<br />Proficient in
+                <strong>Microsoft Office</strong> and<strong> G-Suite</strong>
+                for creating presentations and other expository projects
+                (<strong>Word</strong>, <strong>Excel</strong>,
+                <strong>PowerPoint</strong>).<br />2 years studying&nbsp;
+                <strong>Autocad</strong> for creating technical drawings.
+              </p>
+            </div>
+          </div>
+          <div class="container right">
+            <img src="public/images/education/epicode - logo.ico" alt="" />
+            <div class="text-box">
+              <h2>Epicode - Institute of Technology</h2>
+              <p>
+                <small
+                  >BSc Honours | Computer Engineering & Artificial
+                  Intelligence</small
+                >
+              </p>
+              <time><small>2024 - 2028</small></time>
+              <p>
+                3-year program with a focus on practical application, covering
+                programming (<strong>C</strong>, <strong>C++</strong>,
+                <strong>Python</strong>, <strong>JavaScript</strong>, and
+                <strong>.NET technologies</strong>), database systems
+                (<strong>SQL</strong>, <strong>NoSQL</strong>), web development
+                (<strong>HTML</strong>, <strong>CSS</strong>,
+                <strong>JavaScript</strong>, <strong>React</strong>), and cloud
+                technologies (<strong>AWS</strong>, <strong>Azure</strong>).
+                Specialized modules in <strong>Artificial Intelligence</strong>,
+                <strong>Machine Learning</strong>, and
+                <strong>Data Science</strong>. <br />Experience in
+                <strong>team projects</strong> with industry collaboration,
+                utilizing methodologies like <strong>Agile</strong>, and
+                project-based learning for real-world solutions. Strong
+                foundation in <strong>critical thinking</strong>,
+                <strong>problem-solving</strong>, and technical communication in
+                both <strong>English</strong> and <strong>Italian</strong>.
+              </p>
+            </div>
+          </div>
+          <h3>Work Experience</h3>
           <div id="onit" class="container left">
             <img src="public/images/companies/onit-logo.png" alt="" />
             <div class="text-box">
@@ -210,10 +281,10 @@
               </p>
               <time><small>Jun 2022 - Sept 2022</small></time>
               <p>
-                <strong>Flutter</strong>, external consultant for a company that
-                dealt with boilers and thermostats, maintained and improved the
-                codebase, added new features for remote controlling using IoT
-                services in collaboration with a foreign team
+                <strong>Flutter</strong>, external consultant, maintained and
+                improved existing codebase, added new features for remote
+                controlling using IoT services in collaboration with a foreign
+                team
               </p>
             </div>
           </div>
@@ -264,13 +335,11 @@
               </p>
               <p>
                 Design and development of components and functionalities for
-                proprietary React framework based on micro-frontends for a
-                company in the medical field (dialysis clinics)
+                proprietary React framework based on micro-frontends
               </p>
               <p>
                 <strong
-                  >.NET, C#, CSS, Javascript, Razor Pages, MVC, MUI,
-                  Bootstrap,</strong
+                  >.NET, C#, CSS, Javascript, Razor Pages, MVC, MUI</strong
                 >
               </p>
               <p>
@@ -285,8 +354,20 @@
         </div>
       </section>
 
-      <!-- 4.	Contact Section: Provide links to your social profiles (e.g., LinkedIn, GitHub) and an optional form to capture visitor messages, with all the required validation. -->
       <section class="contact-section" id="contact">
+        <div class="separator-1 contact-separator">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
         <h2>Contact</h2>
         <div class="grid">
           <div class="grid-item">
@@ -299,28 +380,52 @@
               <a
                 href="https://www.linkedin.com/in/lucian-diaconu-17704a158/"
                 target="_blank"
-                ><i class="fa-brands fa-linkedin"></i>
+                ><i id="linkedin-icon" class="fa-brands fa-linkedin"></i>
               </a>
               <a href="https://github.com/Lucio1590" target="_blank"
-                ><i class="fab fa-github"></i
+                ><i id="github-icon" class="fab fa-github"></i
               ></a>
             </div>
           </div>
-          <div class="grid-item">
-            <h4>Send me a message</h4>
-            <form class="contact-form" action="submit" method="post">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required />
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required></textarea>
-              <button type="submit">Send</button>
+          <div class="grid-item form-container">
+            <form action="#" class="form">
+              <h4>Want to have a chat?</h4>
+              <p>
+                If you want to have a chat with me, please send a message
+                through this form
+              </p>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  value-size="40"
+                  placeholder="Ex. John Doe"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="name">Email</label>
+                <input
+                  type="email"
+                  value-size="40"
+                  placeholder="Ex. example@company.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea placeholder="Message" required></textarea>
+              </div>
+              <input class="form-button" type="submit" value="Send" />
             </form>
           </div>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <p>Made by <strong>Lucian Diaconu</strong> with ❤️</p>
+      <p><small>&copy; 2024</small></p>
+    </footer>
   </body>
   <script src="timeline.js"></script>
   <script src="script.js"></script>

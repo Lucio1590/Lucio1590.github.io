@@ -56,6 +56,14 @@
   animation: timeline-line 6s linear forwards;
 }
 
+.timeline > h3 {
+  text-align: center;
+  color: var(--white);
+  background-color: var(--light-gray);
+  padding: 20px;
+  top: -4px;
+}
+
 @keyframes timeline-line {
   0% {
     height: 0;

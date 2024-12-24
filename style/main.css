@@ -124,7 +124,9 @@ section {
   padding-top: 60px;
 }
 .resume-section > h2 {
+  text-align: center;
   color: var(--white);
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -144,7 +146,7 @@ section {
 .contact-section {
   background-color: var(--white);
   color: var(--dark-gray);
-  padding: 100px 90px;
+  padding: 100px 40px;
   text-align: center;
 }
 
@@ -157,26 +159,27 @@ section {
   margin-right: 10px;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.contact-form input,
-.contact-form textarea {
+.contact-separator {
+  position: absolute;
+  margin-top: -105px;
+  top: -1px;
+  bottom: unset;
+  left: 0;
   width: 100%;
-  padding: 10px;
-  border: 1px solid var(--dark-gray);
-  border-radius: 6px;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
-.contact-form button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  background-color: var(--green);
-  color: var(--white);
-  cursor: pointer;
+.footer {
+  padding: 20px;
+  text-align: center;
+}
+
+#github-icon:hover {
+  color: #6e5494;
+}
+
+#linkedin-icon:hover {
+  color: #0077b5;
 }
