@@ -1,4 +1,10 @@
 # portfolio-exam
+Made by Lucian Diaconu as a final exam for the Web Development course,
+Ued Html5, Css3, JavaScript.
+
+
+## live version:
+https://lucio1590.github.io/#
 
 ### Sources:
 Semantic HTML: https://www.w3schools.com/html/html5_syntax.asp
